@@ -10,7 +10,10 @@ Exercice : Créer une fonction getNextYear() qui retourne l'année (sur 4 chiffr
 // Fonction à créer ici
 //-------------------------------------------------------------------------
 
-
+function getNextYear()
+{
+    return strftime('%Y') + 1;
+}
 
 
 
