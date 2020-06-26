@@ -10,7 +10,12 @@ Exercice : Créer une fonction removeDuplicates() qui prend 1 argument de type "
 // Fonction à créer ici
 //-------------------------------------------------------------------------
 
+function removeDuplicates(array $rem)
+{
+    $rem = array_unique ($rem);
 
+    return $rem;
+}
 
 
 
