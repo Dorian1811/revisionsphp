@@ -10,7 +10,15 @@ Exercice : Créer une fonction biggestOf() qui prend 2 arguments de type "int". 
 // Fonction à créer ici
 //-------------------------------------------------------------------------
 
-
+function biggestOf(int $big1, int $big2)
+{
+    if($big1 > $big2)
+    {
+        return $big1;
+    }else {
+        return $big2;
+    }
+}
 
 
 
