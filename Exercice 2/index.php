@@ -11,8 +11,10 @@ Exercice : Créer une fonction iReturnMyArgument() qui retourne son argument.
 //-------------------------------------------------------------------------
 
 
-
-
+function iReturnMyArgument($arg)
+{
+    return $arg;
+}
 
 //-------------------------------------------------------------------------
 
