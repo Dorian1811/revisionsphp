@@ -10,7 +10,11 @@ Exercice : Créer une fonction sortArray() qui prend 1 argument de type "array" 
 // Fonction à créer ici
 //-------------------------------------------------------------------------
 
-
+function sortArray(array $tab)
+{
+    sort($tab);
+    return $tab;
+}
 
 
 
