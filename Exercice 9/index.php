@@ -10,7 +10,15 @@ Exercice : Créer une fonction censor() qui prend 1 argument de type "string" et
 // Fonction à créer ici
 //-------------------------------------------------------------------------
 
+function censor(string $cens)
+{
 
+    $ban = array(' stupide', ' ANDOUILLE', ' idiot');
+
+    $cens = str_replace($ban, ' **** ', $cens);
+
+    return $cens;
+}
 
 
 
