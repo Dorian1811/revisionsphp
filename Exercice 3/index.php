@@ -10,8 +10,10 @@ Exercice : Créer une fonction sumOf() qui prend 2 arguments de type "int" et re
 // Fonction à créer ici
 //-------------------------------------------------------------------------
 
-function sumOf($num):int
+function sumOf($num1, $num2):int
 {
+    $num = $num1 + $num2;
+
     return $num;
 }
 
