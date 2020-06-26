@@ -13,9 +13,9 @@ Exercice : Créer une fonction censor() qui prend 1 argument de type "string" et
 function censor(string $cens)
 {
 
-    $ban = array(' stupide', ' ANDOUILLE', ' idiot');
+    $ban = array(' stupide', ' andouille', ' idiot');
 
-    $cens = str_replace($ban, ' **** ', $cens);
+    $cens = str_ireplace($ban, ' **** ', $cens);
 
     return $cens;
 }
