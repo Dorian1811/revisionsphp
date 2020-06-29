@@ -13,13 +13,14 @@ Exercice : Créer une fonction getGoogleLogo() qui téléchargera le logo à l'a
 function getGoogleLogo()
 {
 
-    /*$logo = mkdir("/laragon/www/revisionsphp/logo/", 0700);*/
-            
-    define('TARGET', 'laragon/www/revisionsphp/logo');
-
+    if(!file_exists("logos"))
+    {
+        mkdir("logos");
+    }
+    
     $url = 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png';
 
-    $fichier = $_SERVER['DOCUMENT_ROOT'].'/revisionsphp/logo/logo_google.png';
+    $fichier = 'logos/logo_google.png';
 
     copy($url, $fichier);
 
