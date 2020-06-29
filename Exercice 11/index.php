@@ -10,16 +10,18 @@ Exercice : Créer une fonction getGoogleLogo() qui téléchargera le logo à l'a
 // Fonction à créer ici
 //-------------------------------------------------------------------------
 
-function getGoogleLogo($logo)
+function getGoogleLogo()
 {
 
-    /*$logo = fopen("https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png");*/
+    /*$logo = mkdir("/laragon/www/revisionsphp/logo/", 0700);*/
+            
+    define('TARGET', 'laragon/www/revisionsphp/logo');
 
-    /*$logo = mkdir("revisionsphp/logos", 0777);*/
+    $url = 'https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png';
 
-    /*imagegif 
+    $fichier = $_SERVER['DOCUMENT_ROOT'].'/revisionsphp/logo/logo_google.png';
 
-    imagejpeg*/
+    copy($url, $fichier);
 
 }
 
